@@ -406,12 +406,20 @@ Point Radius_Dimension::tail  ()const
 
 Point Radius_Dimension::head()const
 {
-  Point c = arc_.center();
-  Float r = arc_.radius();
-  Normal nor;
-  nor.set_data(c,tail_);
-  nor.set_unit();
-  return c.polarTo(r,nor);
+	Point s = arc_.start();
+	Point p = arc_.path();
+	Point e = arc_.end();
+	if(s==p || p==e){
+		return s;
+	}
+
+
+	Point c = arc_.center();
+	Float r = arc_.radius();
+	Normal nor;
+	nor.set_data(c,tail_);
+	nor.set_unit();
+	return c.polarTo(r,nor);
 }
 
 //void Radius_Dimension::set_head(const Point& pt)
