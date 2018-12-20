@@ -19,6 +19,14 @@
 *.sbr
 *.xsr
 
+--./bin/sample/*.*
+--*.dxf
+--*.rei
+--*.bmp
+--*.doc
+--*.pdf
+
+
 ./obj/
 ./lib/
 
