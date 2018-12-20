@@ -1,0 +1,6 @@
+C: C CG A
+P: P KP
+G: G
+B: B
+S: S
+NET: A-  

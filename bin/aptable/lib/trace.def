@@ -1,0 +1,6 @@
+LIBRARY trace.dll
+
+EXPORTS
+TraceClose
+TraceInit
+TraceOut

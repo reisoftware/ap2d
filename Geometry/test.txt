@@ -1,0 +1,355 @@
+intersect
+%case 1
+LLine:
+pt: 100 0 0 
+pt: 100 100 0 
+LLine:
+pt: 0 50 0 
+pt: 200 50 0
+cross: 100 50 0 
+case_end
+
+
+%case 2
+RLine:
+pt: 100 0 0 
+pt: 100 100 0 
+LLine:
+pt: 0 50 0 
+pt: 200 50 0
+cross: 100 50 0 
+case_end
+
+
+%case 3
+RLine:
+pt: 100 0 0 
+pt: 100 100 0 
+RLine:
+pt: 0 50 0 
+pt: 200 50 0
+cross: 100 50 0 
+case_end
+
+
+%case 4
+SLine:
+pt: 100 0 0 
+pt: 100 100 0 
+LLine:
+pt: 0 50 0 
+pt: 200 50 0
+cross: 100 50 0 
+case_end
+
+
+%case 5
+SLine:
+pt: 100 0 0 
+pt: 100 100 0 
+RLine:
+pt: 0 50 0 
+pt: 200 50 0
+cross: 100 50 0 
+case_end
+
+
+%case 6
+SLine:
+pt: 100 0 0 
+pt: 100 100 0 
+SLine:
+pt: 0 50 0 
+pt: 200 50 0
+cross: 100 50 0 
+case_end
+
+
+%case 7
+LLine:
+pt: 100 0 0 
+pt: 100 100 0 
+LLine:
+pt: -200 50 0 
+pt: 0 50 0
+cross: 100 50 0 
+case_end
+
+
+%case 8
+RLine:
+pt: 100 0 0 
+pt: 100 100 0 
+LLine:
+pt: -200 50 0 
+pt: 0 50 0
+cross: 100 50 0 
+case_end
+
+
+%case 9
+RLine:
+pt: 100 0 0 
+pt: 100 100 0 
+RLine:
+pt: -200 50 0 
+pt: 0 50 0
+cross: 100 50 0 
+case_end
+
+
+%case 10
+SLine:
+pt: 100 0 0 
+pt: 100 100 0 
+LLine:
+pt: -200 50 0 
+pt: 0 50 0
+cross: 100 50 0 
+case_end
+
+
+%case 11
+SLine:
+pt: 100 0 0 
+pt: 100 100 0 
+RLine:
+pt: -200 50 0 
+pt: 0 50 0
+cross: 100 50 0 
+case_end
+
+
+%case 12
+SLine:
+pt: 100 0 0 
+pt: 100 100 0 
+SLine:
+pt: -200 50 0 
+pt: 0 50 0
+case_end
+
+
+
+%case 13
+LLine:
+pt: 100 0 0 
+pt: 100 100 0 
+LLine:
+pt: 0 50 0 
+pt: 150 -100 0
+cross: 100 -50 0 
+case_end
+
+
+%case 14
+RLine:
+pt: 100 0 0 
+pt: 100 100 0 
+LLine:
+pt: 0 50 0 
+pt: 150 -100 0
+case_end
+
+
+
+%case 15
+RLine:
+pt: 100 0 0 
+pt: 100 100 0 
+RLine:
+pt: 0 50 0 
+pt: 150 -100 0
+case_end
+
+
+
+%case 16
+SLine:
+pt: 100 0 0 
+pt: 100 100 0 
+LLine:
+pt: 0 50 0 
+pt: 150 -100 0
+case_end
+
+
+
+%case 17
+SLine:
+pt: 100 0 0 
+pt: 100 100 0 
+RLine:
+pt: 0 50 0 
+pt: 150 -100 0
+case_end
+
+
+
+%case 18
+SLine:
+pt: 100 0 0 
+pt: 100 100 0 
+SLine:
+pt: 0 50 0 
+pt: 150 -100 0
+case_end
+
+
+
+%case 19
+LLine:
+pt: 100 100 0 
+pt: 100 0 0 
+LLine:
+pt: 150 0 0
+pt: 0 50 0 
+cross:  100 16.66666 0
+case_end
+
+
+%case 20
+RLine:
+pt: 100 100 0 
+pt: 100 0 0 
+LLine:
+pt: 150 0 0
+pt: 0 50 0 
+cross:  100 16.66666 0
+case_end
+
+
+%case 21
+RLine:
+pt: 100 100 0 
+pt: 100 0 0 
+RLine:
+pt: 150 0 0
+pt: 0 50 0 
+cross:  100 16.66666 0
+case_end
+
+
+%case 22
+SLine:
+pt: 100 100 0 
+pt: 100 0 0 
+LLine:
+pt: 150 0 0
+pt: 0 50 0 
+cross:  100 16.66666 0
+case_end
+
+
+
+%case 23
+SLine:
+pt: 100 100 0 
+pt: 100 0 0 
+RLine:
+pt: 150 0 0
+pt: 0 50 0 
+cross:  100 16.66666 0
+case_end
+
+
+
+%case 24
+SLine:
+pt: 100 100 0 
+pt: 100 0 0 
+SLine:
+pt: 150 0 0
+pt: 0 50 0 
+cross:  100 16.66666 0
+case_end
+
+
+
+%case 25
+SLine:
+pt: 50 0 0 
+pt: 100 100 0 
+SLine:
+pt: 0 100 0
+pt: 100 50 0 
+cross: 80 60 0 
+case_end
+
+
+%case 26
+SLine:
+pt: 50 0 0 
+pt: 100 100 0 
+Circle:
+pt: 50 50 0
+r: 55
+nor: 0 0 1
+cross: 92.4722 84.9444 0 
+case_end
+
+%case 27
+SLine:
+pt: 50 0 0 
+pt: 100 100 0 
+Circle:
+pt: 50 50 0
+r: 25
+nor: 0 0 1
+cross: 75 50 0 
+cross: 65 30 0 
+case_end
+
+%case 28
+SLine:
+pt: 50 0 0 
+pt: 100 100 0 
+Arc:
+pt: 0 0 0
+pt: 50 50 0
+pt: 100 20 0
+cross: 72.9574 45.9148 0 
+case_end
+
+%case 29
+Circle:
+pt: 50 50 0
+r: 25
+nor: 0 0 1
+Arc:
+pt: 0 0 0
+pt: 50 50 0
+pt: 100 20 0
+cross: 74.5380 45.2161 0 
+case_end
+
+
+function_end
+
+
+pt_in_polygon
+%case 1
+Polygon:
+pt: 0 0 0 
+pt: 100 0 0 
+pt: 100 100 0 
+pt: 0 100 0 
+cal: 50 50 0 
+in: 1
+case_end
+
+%case 2
+Polygon:
+pt: 0 0 0 
+pt: 100 0 0 
+pt: 100 100 0 
+pt: 0 100 0 
+cal: 0 100 0 
+in: 1
+case_end
+
+
+function_end
+
+
+END

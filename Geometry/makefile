@@ -1,0 +1,32 @@
+TARGET = main.exe
+CC = g++
+ALL : $(TARGET)
+	@echo "make all" 
+$(TARGET) : Normal.o read.o test_global.o global.o main.o Point.o calculate.o Line.o SLine.o Plane.o LLine.o RLine.o intersect.o
+	$(CC) -Wall4 -ggdb -o $@ Normal.o read.o test_global.o global.o main.o Point.o Line.o SLine.o Plane.o LLine.o RLine.o intersect.o calculate.o
+main.o : main.cpp
+	$(CC)  -c $<
+intersect.o : intersect.cpp
+	$(CC) -c $<
+calculate.o : calculate.cpp
+	$(CC) -c $<
+Plane.o : Plane.cpp
+	$(CC) -c $<
+LLine.o : LLine.cpp
+	$(CC) -c $<
+SLine.o : SLine.cpp
+	$(CC) -c $<
+RLine.o : RLine.cpp
+	$(CC) -c $<
+Line.o : Line.cpp
+	$(CC) -c $<
+Point.o : Point.cpp
+	$(CC) -c $<
+read.o : read.cpp
+	$(CC) -c $<
+global.o : global.cpp
+	$(CC) -c $<
+Normal.o : Normal.cpp
+	$(CC)  -c $<
+test_global.o : test_global.cpp
+	$(CC) -c $<

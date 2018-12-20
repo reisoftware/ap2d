@@ -1,0 +1,197 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ID_DLG_HOTKEY DIALOG DISCARDABLE  0, 0, 264, 206
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "HotKey"
+FONT 10, "System"
+BEGIN
+    CONTROL         "List1",ID_LIST_SEC,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,5,5,90,175
+    CONTROL         "List7",ID_LIST_KEY,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,95,5,165,175
+    PUSHBUTTON      "Advanced",ID_ADVANCED,10,185,40,14
+    PUSHBUTTON      "Default",ID_DEFAULT,55,185,40,14
+    DEFPUSHBUTTON   "OK",IDOK,170,185,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,215,185,40,14
+END
+
+ID_DLG_HOTKEY_EDIT DIALOG DISCARDABLE  0, 0, 159, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set HotKey"
+FONT 10, "System"
+BEGIN
+    COMBOBOX        ID_COMBO_CBK,5,5,100,180,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        ID_COMBO_HIT,105,5,50,180,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,65,25,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,110,25,40,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    ID_DLG_HOTKEY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    ID_DLG_HOTKEY_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 10
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+ID_DLG_HOTKEY_EDIT DLGINIT
+BEGIN
+    ID_COMBO_CBK, 0x403, 2, 0
+0x007e, 
+    ID_COMBO_CBK, 0x403, 5, 0
+0x7463, 0x6c72, "\000" 
+    ID_COMBO_CBK, 0x403, 6, 0
+0x6873, 0x6669, 0x0074, 
+    ID_COMBO_CBK, 0x403, 13, 0
+0x7463, 0x6c72, 0x2b20, 0x7320, 0x6968, 0x7466, "\000" 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x007e, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x0041, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x0042, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x0043, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x0044, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x0045, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x0046, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x0047, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x0048, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x0049, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x004a, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x004b, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x004c, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x004d, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x004e, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x004f, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x0050, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x0051, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x0052, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x0053, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x0054, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x0055, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x0056, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x0057, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x0058, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x0059, 
+    ID_COMBO_HIT, 0x403, 2, 0
+0x005a, 
+    0
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

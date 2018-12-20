@@ -1,0 +1,126 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "Ap2D"=.\Ap2D.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/ap2d", FODAAAAA
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name display
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name mfcex
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name object
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "CadIO"=..\CadIO\CadIO.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name object
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Geometry"=..\Geometry\Geometry.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "afc"=..\afc\afc.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "display"=..\Display\display.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name CadIO
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "mfcex"=..\mfcex\mfcex.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "object"=..\Object\object.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name afc
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Geometry
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

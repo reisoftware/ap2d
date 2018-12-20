@@ -1,0 +1,97 @@
+LIBRARY   CADIO
+
+EXPORTS
+	dxfWriteParamString
+	dxfWriteParamInteger
+	dxfWriteParamDouble
+	dxfCreateFile
+	dxfCloseFile
+	dxfSetCurrentColor
+	dxfSectionBegin
+	dxfSectionEnd
+	dxfTableTypeBegin
+	dxfTableTypeEnd
+	dxfAddLayer
+	dxfSetCurrentLayer
+	dxfAddLinetype
+	dxfSetCurrentLinetype
+	dxfAddTextStyle
+	dxfSetCurrentTextStyle
+	dxfAddDimStyle
+	dxfSetCurrentDimStyle
+	dxfLine
+	dxfCircle
+	dxfSolid
+	dxfText
+	dxfDimLinear
+	dxfArc
+	dxfInsertBlock
+	dxfBlockBegin
+	dxfBlockEnd
+	drwCreate
+	drwDestroy
+	drwAddTableType
+	drwDeleteTableType
+	drwFindTableType
+	drwAddBlock
+	drwDeleteBlock
+	drwFindBlock
+	drwGetBlocksNum
+	drwAddEntity
+	drwDeleteEntity
+	drwChangeEntity
+	drwFindEntity
+	drwSaveDataToFile
+	drwLoadDataFromFile
+	drwInitView
+	drwPaint
+	drwGetViewProperties
+	drwSetViewProperties
+	drwGetDrawingBorder
+	drwZoomExtents
+	drw_get_ents
+	save_dxf_ents
+	drwAddBlock_Direct
+	UnInitilizePDRAWING
+	UnInitilizePDXF
+	dxfFindBlockHeader
+	dxfGetCurrentSection
+	dxfGetCurrentTableType
+	drwFindTableType_Direct
+	dxfReadTableType
+	dxfFindNextSection
+	InitilizePDXF
+	dxfOpenFile
+	InitilizePDRAWING
+	drwFindBlock_Direct
+	dxfReadEntityData_Direct
+	dxfFindNextTableType
+	drwAddEntity_Direct
+	SetEntityHeaderDefaultValues
+	ReadLineData
+	ReadPointData
+	ReadCircleData
+	ReadEllipseData
+	ReadArcData
+	ReadSolidData
+	ReadInsertData
+	ReadPolyLineData
+	ReadDimensionData
+	ReadTextData
+	dxfRestorePos
+	ReadParamFromDxfFile
+	dxfStorePos
+	dxfPolyLine
+	dxfPoint
+
+
+
+
+
+
+
+
+
+
+
+

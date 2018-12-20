@@ -1,0 +1,2152 @@
+object Text
+{
+	id 2578
+	class 10
+	previd 277
+	nextid 0
+	selected 0
+	tablepart 2577
+	x1 32.000
+	y1 43.000
+	x2 38.000
+	y2 44.000
+	bulge 0.000
+	height 1.000
+	width 1.000
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 3
+	line_type 1
+	line_width 1
+	pen_num 0
+	textstr "&kind="
+	thickness 1.000
+	grid_dx 1.000
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 2575
+	class 10
+	previd 277
+	nextid 0
+	selected 0
+	tablepart 2577
+	x1 0.000
+	y1 43.000
+	x2 6.000
+	y2 44.000
+	bulge 0.000
+	height 1.000
+	width 1.000
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 3
+	line_type 1
+	line_width 1
+	pen_num 0
+	textstr "&obj=1"
+	thickness 1.000
+	grid_dx 1.000
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 2573
+	class 10
+	previd 277
+	nextid 0
+	selected 0
+	tablepart 2577
+	x1 23.000
+	y1 43.000
+	x2 30.000
+	y2 44.000
+	bulge 0.000
+	height 1.000
+	width 1.000
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 3
+	line_type 1
+	line_width 1
+	pen_num 0
+	textstr "&type=3"
+	thickness 1.000
+	grid_dx 1.000
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 2567
+	class 10
+	previd 277
+	nextid 0
+	selected 0
+	tablepart 2577
+	x1 94.000
+	y1 43.000
+	x2 103.000
+	y2 44.000
+	bulge 0.000
+	height 1.000
+	width 1.000
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 3
+	line_type 1
+	line_width 1
+	pen_num 0
+	textstr "&section="
+	thickness 1.000
+	grid_dx 1.000
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 2566
+	class 10
+	previd 277
+	nextid 0
+	selected 0
+	tablepart 2577
+	x1 125.000
+	y1 43.000
+	x2 130.000
+	y2 44.000
+	bulge 0.000
+	height 1.000
+	width 1.000
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 3
+	line_type 1
+	line_width 1
+	pen_num 0
+	textstr "&mat="
+	thickness 1.000
+	grid_dx 1.000
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 2565
+	class 10
+	previd 277
+	nextid 0
+	selected 0
+	tablepart 2577
+	x1 7.000
+	y1 43.000
+	x2 14.000
+	y2 44.000
+	bulge 0.000
+	height 1.000
+	width 1.000
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 3
+	line_type 1
+	line_width 1
+	pen_num 0
+	textstr "&count="
+	thickness 1.000
+	grid_dx 1.000
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 2564
+	class 10
+	previd 277
+	nextid 0
+	selected 0
+	tablepart 2577
+	x1 159.000
+	y1 43.000
+	x2 167.000
+	y2 44.000
+	bulge 0.000
+	height 1.000
+	width 1.000
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 3
+	line_type 1
+	line_width 1
+	pen_num 0
+	textstr "&length="
+	thickness 1.000
+	grid_dx 1.000
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 2563
+	class 10
+	previd 277
+	nextid 0
+	selected 0
+	tablepart 2577
+	x1 178.000
+	y1 43.000
+	x2 186.000
+	y2 44.000
+	bulge 0.000
+	height 1.000
+	width 1.000
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 3
+	line_type 1
+	line_width 1
+	pen_num 0
+	textstr "&weight="
+	thickness 1.000
+	grid_dx 1.000
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 2562
+	class 10
+	previd 277
+	nextid 0
+	selected 0
+	tablepart 2577
+	x1 48.000
+	y1 43.000
+	x2 55.000
+	y2 44.000
+	bulge 0.000
+	height 1.000
+	width 1.000
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 3
+	line_type 1
+	line_width 1
+	pen_num 0
+	textstr "&group="
+	thickness 1.000
+	grid_dx 1.000
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 2551
+	class 10
+	previd 277
+	nextid 0
+	selected 0
+	tablepart 2577
+	x1 73.000
+	y1 43.000
+	x2 82.000
+	y2 44.000
+	bulge 0.000
+	height 1.000
+	width 1.000
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 3
+	line_type 1
+	line_width 1
+	pen_num 0
+	textstr "&part_no="
+	thickness 1.000
+	grid_dx 1.000
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 2550
+	class 10
+	previd 286
+	nextid 0
+	selected 0
+	tablepart 2548
+	x1 60.000
+	y1 30.000
+	x2 73.000
+	y2 31.000
+	bulge 0.000
+	height 1.000
+	width 1.000
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 3
+	line_type 1
+	line_width 1
+	pen_num 0
+	textstr "total-weight:"
+	thickness 1.000
+	grid_dx 1.000
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 300
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2548
+	x1 26.000
+	y1 30.000
+	x2 35.000
+	y2 30.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "Total for"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 287
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2548
+	x1 73.000
+	y1 31.000
+	x2 77.000
+	y2 31.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "----"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 2542
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 3.000
+	y1 53.000
+	x2 19.000
+	y2 53.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "----------------"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 272
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 19.000
+	y1 53.000
+	x2 37.000
+	y2 53.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "------------------"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 271
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 37.000
+	y1 53.000
+	x2 55.000
+	y2 53.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "------------------"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 270
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 55.000
+	y1 53.000
+	x2 73.000
+	y2 53.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "------------------"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 269
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 89.000
+	y1 49.000
+	x2 93.000
+	y2 49.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "(kg)"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 268
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 73.000
+	y1 48.000
+	x2 77.000
+	y2 48.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "----"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 267
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 73.000
+	y1 50.000
+	x2 77.000
+	y2 50.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "----"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 266
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 73.000
+	y1 53.000
+	x2 77.000
+	y2 53.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "----"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 265
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 75.000
+	y1 49.000
+	x2 79.000
+	y2 49.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "(kg)"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 264
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 59.000
+	y1 49.000
+	x2 63.000
+	y2 49.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "(mm)"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 263
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 59.000
+	y1 52.000
+	x2 64.000
+	y2 52.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "Page:"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 1687
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 4.000
+	y1 51.000
+	x2 13.000
+	y2 51.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "CONTRACT:"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 261
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 59.000
+	y1 51.000
+	x2 64.000
+	y2 51.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "Date:"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 260
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 3.000
+	y1 52.000
+	x2 37.000
+	y2 52.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "XSTEEL PARTS LIST FOR CONTRACT NO:"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 258
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 19.000
+	y1 50.000
+	x2 37.000
+	y2 50.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "------------------"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 257
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 37.000
+	y1 50.000
+	x2 55.000
+	y2 50.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "------------------"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 256
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 55.000
+	y1 50.000
+	x2 73.000
+	y2 50.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "------------------"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 255
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 55.000
+	y1 48.000
+	x2 73.000
+	y2 48.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "------------------"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 254
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 37.000
+	y1 48.000
+	x2 55.000
+	y2 48.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "------------------"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 253
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 19.000
+	y1 48.000
+	x2 37.000
+	y2 48.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "------------------"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 251
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 17.000
+	y1 49.000
+	x2 21.000
+	y2 50.000
+	bulge 0.000
+	height 1.000
+	width 0.800
+	slant 0.000
+	font_name "ÇlÇr ñæí©"
+	font_type 5
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "çﬁå^"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 250
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 35.000
+	y1 49.000
+	x2 39.000
+	y2 50.000
+	bulge 0.000
+	height 1.000
+	width 0.800
+	slant 0.000
+	font_name "ÇlÇr ñæí©"
+	font_type 5
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "çﬁÊ¬"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 249
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 46.000
+	y1 49.000
+	x2 50.000
+	y2 50.000
+	bulge 0.000
+	height 1.000
+	width 0.800
+	slant 0.000
+	font_name "ÇlÇr ñæí©"
+	font_type 5
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "êîó "
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 248
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 55.000
+	y1 49.000
+	x2 59.000
+	y2 50.000
+	bulge 0.000
+	height 1.000
+	width 0.800
+	slant 0.000
+	font_name "romsim"
+	font_type 4
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "í∑ìx"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 247
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 83.000
+	y1 49.000
+	x2 89.000
+	y2 50.000
+	bulge 0.000
+	height 1.000
+	width 0.800
+	slant 0.000
+	font_name "ÇlÇr ñæí©"
+	font_type 5
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "ëçèdó "
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 246
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 70.000
+	y1 49.000
+	x2 74.000
+	y2 50.000
+	bulge 0.000
+	height 1.000
+	width 0.800
+	slant 0.000
+	font_name "ÇlÇr ñæí©"
+	font_type 5
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "íPèd"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 301
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2548
+	x1 36.000
+	y1 30.000
+	x2 44.000
+	y2 30.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "members:"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 298
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 3.000
+	y1 49.000
+	x2 11.000
+	y2 50.000
+	bulge 0.000
+	height 1.000
+	width 0.800
+	slant 0.000
+	font_name "ÇlÇr ñæí©"
+	font_type 5
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "ïîåèï“çÜ"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 297
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2548
+	x1 73.000
+	y1 29.000
+	x2 77.000
+	y2 29.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "----"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 296
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2548
+	x1 55.000
+	y1 29.000
+	x2 73.000
+	y2 29.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "------------------"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 295
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2548
+	x1 37.000
+	y1 29.000
+	x2 55.000
+	y2 29.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "------------------"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 286
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2548
+	x1 59.000
+	y1 31.000
+	x2 77.000
+	y2 31.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "------------------"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 294
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2548
+	x1 19.000
+	y1 29.000
+	x2 37.000
+	y2 29.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "------------------"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 285
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2548
+	x1 37.000
+	y1 31.000
+	x2 55.000
+	y2 31.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "------------------"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 284
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2548
+	x1 19.000
+	y1 31.000
+	x2 37.000
+	y2 31.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "------------------"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 2539
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2548
+	x1 3.000
+	y1 31.000
+	x2 19.000
+	y2 31.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "----------------"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 2543
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 3.000
+	y1 48.000
+	x2 19.000
+	y2 48.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "----------------"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 2545
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 3.000
+	y1 50.000
+	x2 19.000
+	y2 50.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "----------------"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Text
+{
+	id 2541
+	class 10
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2548
+	x1 3.000
+	y1 29.000
+	x2 19.000
+	y2 29.800
+	bulge 0.000
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type 0
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	textstr "----------------"
+	thickness 1.000
+	grid_dx 2.500
+	sizetype 0
+	angle 0.000
+	active_font 0
+};
+object Template
+{
+	id 213
+	class 12
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 0
+	x1 0.000
+	y1 0.000
+	x2 0.000
+	y2 0.000
+	bulge 0.000
+	margin_top 0.000
+	margin_bottom 0.000
+	margin_left 4.000
+	margin_right 0.000
+	table_type 2
+	repetition_mode 0
+	repetition_dir 2
+	row_dist 0
+	rows_on_page 10000
+	columns_on_page 80
+	grid_x1 0.000
+	grid_y1 0.000
+	grid_x2 210.000
+	grid_y2 120.000
+	grid_dx 1.000
+	grid_dy 1.000
+	grid_tolerance 5.000
+	grid_visible 0
+	grid_active 1
+	max_id 0
+	type_name "PART"
+	table_name "PART"
+};
+object Tablepart
+{
+	id 2546
+	class 13
+	previd -1
+	nextid 0
+	selected 0
+	tablepart 0
+	x1 0.000
+	y1 55.000
+	x2 93.000
+	y2 47.000
+	bulge 0.000
+	line_color 5
+	line_type 1
+	line_width 1
+	pen_num -1
+	margin_top 0.000
+	margin_bottom 0.000
+	margin_left 0.000
+	margin_right 0.000
+	tablepart_type 4
+	plot_order 0
+	plot_policy 2
+	rule_text ""
+};
+object Tablepart
+{
+	id 2548
+	class 13
+	previd -1
+	nextid 0
+	selected 0
+	tablepart 0
+	x1 0.000
+	y1 33.000
+	x2 93.000
+	y2 27.000
+	bulge 0.000
+	line_color 5
+	line_type 1
+	line_width 1
+	pen_num -1
+	margin_top 0.000
+	margin_bottom 0.000
+	margin_left 0.000
+	margin_right 0.000
+	tablepart_type 2
+	plot_order 0
+	plot_policy 2
+	rule_text ""
+};
+object Tablepart
+{
+	id 2577
+	class 13
+	previd -1
+	nextid 0
+	selected 0
+	tablepart 0
+	x1 0.000
+	y1 45.000
+	x2 210.000
+	y2 42.000
+	bulge 0.000
+	line_color 5
+	line_type 1
+	line_width 1
+	pen_num -1
+	margin_top 0.000
+	margin_bottom 0.000
+	margin_left 0.000
+	margin_right 0.000
+	tablepart_type 3
+	plot_order 0
+	plot_policy 0
+	rule_text ""
+};
+object Tablepart
+{
+	id 2549
+	class 13
+	previd -1
+	nextid 0
+	selected 0
+	tablepart 0
+	x1 0.000
+	y1 59.000
+	x2 93.000
+	y2 57.000
+	bulge 0.000
+	line_color 5
+	line_type 1
+	line_width 1
+	pen_num -1
+	margin_top 0.000
+	margin_bottom 0.000
+	margin_left 0.000
+	margin_right 0.000
+	tablepart_type 1
+	plot_order 0
+	plot_policy 2
+	rule_text ""
+};
+object Textfield
+{
+	id 2579
+	class 15
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2577
+	x1 38.000
+	y1 43.000
+	x2 50.000
+	y2 45.000
+	bulge 0.000
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	height 1.000
+	width 0.800
+	slant 0.000
+	font_name "ÇlÇr ñæí©"
+	font_type -1
+	angle 0.000
+	grid_dx 2.500
+	sizetype 0
+	length 16
+	justify 2
+	order_type 1
+	nodec 0
+	field_type 1
+	sum 0
+	font_number -1
+	pen_name "DEFAULT"
+	field_name "USER_FIELD_1"
+	active_font 0
+};
+object Textfield
+{
+	id 277
+	class 15
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2577
+	x1 82.000
+	y1 43.000
+	x2 90.000
+	y2 45.000
+	bulge 0.000
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	height 1.000
+	width 0.800
+	slant 0.000
+	font_name "ÇlÇr ñæí©"
+	font_type -1
+	angle 0.000
+	grid_dx 2.500
+	sizetype 0
+	length 16
+	justify 1
+	order_type 1
+	nodec 0
+	field_type 1
+	sum 0
+	font_number -1
+	pen_name "DEFAULT"
+	field_name "PART_POS"
+	active_font 0
+};
+object Textfield
+{
+	id 228
+	class 15
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 65.000
+	y1 52.000
+	x2 67.000
+	y2 53.800
+	bulge 0.000
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type -1
+	angle 0.000
+	grid_dx 2.500
+	sizetype 0
+	length 2
+	justify 1
+	order_type 0
+	nodec 0
+	field_type 1
+	sum 0
+	font_number -1
+	pen_name "DEFAULT"
+	field_name "PAGE"
+	active_font 0
+};
+object Textfield
+{
+	id 226
+	class 15
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 65.000
+	y1 51.000
+	x2 69.000
+	y2 52.800
+	bulge 0.000
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type -1
+	angle 0.000
+	grid_dx 2.500
+	sizetype 0
+	length 10
+	justify 1
+	order_type 0
+	nodec 0
+	field_type 3
+	sum 0
+	font_number -1
+	pen_name "DEFAULT"
+	field_name "DATE"
+	active_font 0
+};
+object Textfield
+{
+	id 225
+	class 15
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 39.000
+	y1 52.000
+	x2 47.000
+	y2 53.800
+	bulge 0.000
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type -1
+	angle 0.000
+	grid_dx 2.500
+	sizetype 0
+	length 8
+	justify 1
+	order_type 0
+	nodec 0
+	field_type 3
+	sum 0
+	font_number -1
+	pen_name "DEFAULT"
+	field_name "PROJECT_NUMBER"
+	active_font 0
+};
+object Textfield
+{
+	id 224
+	class 15
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2577
+	x1 58.000
+	y1 43.000
+	x2 70.000
+	y2 44.800
+	bulge 0.000
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type -1
+	angle 0.000
+	grid_dx 2.500
+	sizetype 0
+	length 16
+	justify 2
+	order_type 0
+	nodec 3
+	field_type 3
+	sum 0
+	font_number -1
+	pen_name "DEFAULT"
+	field_name "USER_FIELD_2"
+	active_font 0
+};
+object Textfield
+{
+	id 223
+	class 15
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2577
+	x1 103.000
+	y1 43.000
+	x2 110.000
+	y2 45.000
+	bulge 0.000
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	height 1.000
+	width 0.800
+	slant 0.000
+	font_name "ÇlÇr ñæí©"
+	font_type -1
+	angle 0.000
+	grid_dx 2.500
+	sizetype 0
+	length 30
+	justify 1
+	order_type 0
+	nodec 0
+	field_type 3
+	sum 0
+	font_number -1
+	pen_name "DEFAULT"
+	field_name "PROFILE"
+	active_font 0
+};
+object Textfield
+{
+	id 222
+	class 15
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2577
+	x1 167.000
+	y1 43.000
+	x2 173.000
+	y2 45.000
+	bulge 0.000
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	height 1.000
+	width 0.800
+	slant 0.000
+	font_name "ÇlÇr ñæí©"
+	font_type -1
+	angle 0.000
+	grid_dx 2.500
+	sizetype 0
+	length 8
+	justify 2
+	order_type 0
+	nodec 1
+	field_type 2
+	sum 0
+	font_number -1
+	pen_name "DEFAULT"
+	field_name "LENGTH"
+	active_font 0
+};
+object Textfield
+{
+	id 221
+	class 15
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2577
+	x1 130.000
+	y1 43.000
+	x2 138.000
+	y2 45.000
+	bulge 0.000
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	height 1.000
+	width 0.800
+	slant 0.000
+	font_name "ÇlÇr ñæí©"
+	font_type -1
+	angle 0.000
+	grid_dx 2.500
+	sizetype 0
+	length 10
+	justify 1
+	order_type 0
+	nodec 0
+	field_type 3
+	sum 0
+	font_number -1
+	pen_name "DEFAULT"
+	field_name "MATERIAL"
+	active_font 0
+};
+object Textfield
+{
+	id 220
+	class 15
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2577
+	x1 14.000
+	y1 43.000
+	x2 20.000
+	y2 45.000
+	bulge 0.000
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	height 1.000
+	width 0.800
+	slant 0.000
+	font_name "ÇlÇr ñæí©"
+	font_type -1
+	angle 0.000
+	grid_dx 2.500
+	sizetype 0
+	length 6
+	justify 2
+	order_type 0
+	nodec 0
+	field_type 1
+	sum 0
+	font_number -1
+	pen_name "DEFAULT"
+	field_name "NUMBER"
+	active_font 0
+};
+object Textfield
+{
+	id 219
+	class 15
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2577
+	x1 186.000
+	y1 43.000
+	x2 198.000
+	y2 45.000
+	bulge 0.000
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	height 1.000
+	width 0.800
+	slant 0.000
+	font_name "ÇlÇr ñæí©"
+	font_type -1
+	angle 0.000
+	grid_dx 2.500
+	sizetype 0
+	length 16
+	justify 2
+	order_type 0
+	nodec 3
+	field_type 1
+	sum 0
+	font_number -1
+	pen_name "DEFAULT"
+	field_name "WEIGHT_GROSS"
+	active_font 0
+};
+object Textfield
+{
+	id 299
+	class 15
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2548
+	x1 47.000
+	y1 30.000
+	x2 52.000
+	y2 31.800
+	bulge 0.000
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type -1
+	angle 0.000
+	grid_dx 2.500
+	sizetype 0
+	length 5
+	justify 0
+	order_type 0
+	nodec 0
+	field_type 1
+	sum 1
+	font_number -1
+	pen_name "DEFAULT"
+	field_name "NUMBER"
+	active_font 0
+};
+object Textfield
+{
+	id 215
+	class 15
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2548
+	x1 76.000
+	y1 30.000
+	x2 92.000
+	y2 31.800
+	bulge 0.000
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type -1
+	angle 0.000
+	grid_dx 2.500
+	sizetype 0
+	length 16
+	justify 2
+	order_type 6
+	nodec 3
+	field_type 1
+	sum 2
+	font_number -1
+	pen_name "DEFAULT"
+	field_name "N_WEIGHT_GROSS"
+	active_font 0
+};
+object Textfield
+{
+	id 1529
+	class 15
+	previd 0
+	nextid 0
+	selected 0
+	tablepart 2546
+	x1 15.000
+	y1 51.000
+	x2 27.000
+	y2 52.800
+	bulge 0.000
+	line_color 6
+	line_type 1
+	line_width 0
+	pen_num -1
+	height 0.800
+	width 1.250
+	slant 0.000
+	font_name "romsim"
+	font_type -1
+	angle 0.000
+	grid_dx 2.500
+	sizetype 0
+	length 30
+	justify 1
+	order_type 0
+	nodec 0
+	field_type 3
+	sum 0
+	font_number -1
+	pen_name "DEFAULT"
+	field_name "PROJECT_NAME"
+	active_font 0
+};
