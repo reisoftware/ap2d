@@ -410,7 +410,7 @@ Point Radius_Dimension::head()const
 	Point p = arc_.path();
 	Point e = arc_.end();
 	if(s==p || p==e){
-		return s;
+//		return s;
 	}
 
 
