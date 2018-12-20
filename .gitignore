@@ -20,11 +20,14 @@
 *.xsr
 
 ./obj/
+./lib/
 
 *.obj
 *.lib
 *.dll
 *.exe
+
+!MHWIN32C.obj
 
 !libtcc.lib
 !lua51.lib
