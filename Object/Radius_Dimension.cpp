@@ -560,6 +560,7 @@ void Radius_Dimension::setdrag(const std::vector<Point>& pts, int index)
 void Radius_Dimension::getdrag(std::vector<Point>& pts)const
 {
   pts.push_back(tail_);
+  pts.push_back(head());
 }
 
 //namespace
