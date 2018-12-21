@@ -403,6 +403,18 @@ Point Radius_Dimension::tail  ()const
 //  //head = center_.polarTo(r_, nor);
 //  //return head_;
 //}
+//Point Radius_Dimension::head  ()const
+//{
+//  return head_;
+//  //Point head;
+//  //Normal nor;
+//  //nor.set_data(center_,tail_);
+//  //nor.set_unit();
+//  //return center_.polarTo(r_, nor);
+//  //head = center_.polarTo(r_, nor);
+//  //return head_;
+//}
+
 
 Point Radius_Dimension::head()const
 {
@@ -548,6 +560,7 @@ void Radius_Dimension::setdrag(const std::vector<Point>& pts, int index)
 void Radius_Dimension::getdrag(std::vector<Point>& pts)const
 {
   pts.push_back(tail_);
+  pts.push_back(head());
 }
 
 //namespace
