@@ -171,6 +171,7 @@
 #define IDC_LIST_PRO_PAHTS_SAVE         1060
 #define IDC_LIST_TIPS                   1060
 #define IDC_LIST_DATA                   1060
+#define IDC_LIST_WIDTH_FACTOR           1060
 #define IDC_COMBO_TYPE                  1061
 #define IDC_CHECK_TYPE                  1063
 #define IDC_BUTTON_OPEN_PATH            1064
@@ -210,6 +211,10 @@
 #define IDC_EDIT_TEXT_SCALE             1090
 #define IDC_EDIT_TEXT_SCALE_EXPORT      1091
 #define IDC_IPADDRESS_SERVER            1092
+#define IDC_EDIT_HEIGHT                 1093
+#define IDC_BUT_ADD                     1094
+#define IDC_BUT_EDIT                    1095
+#define IDC_BUT_DEL                     1096
 #define IDC_LIST_SEC                    1113
 #define IDC_LIST_TYPE                   1113
 #define IDC_LIST_KEY                    1114
@@ -530,7 +535,7 @@
 #define _APS_3D_CONTROLS                     1
 #define _APS_NEXT_RESOURCE_VALUE        144
 #define _APS_NEXT_COMMAND_VALUE         32932
-#define _APS_NEXT_CONTROL_VALUE         1093
+#define _APS_NEXT_CONTROL_VALUE         1095
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

@@ -20,9 +20,12 @@ public:
 // Dialog Data
 	//{{AFX_DATA(Dlg_Setting)
 	enum { IDD = IDD_DLG_SETTING };
+	CListCtrl	m_lsit_font_db;
 	CButton	check_show_right_menu_;
 	double	reduce_scale_;
 	double	reduce_scale_export_;
+	CString	m_height_;
+	CString	m_width_factor_;
 	//}}AFX_DATA
 
 
@@ -41,6 +44,9 @@ protected:
 	afx_msg void OnCheckRightMenuShow();
 	virtual BOOL OnInitDialog();
 	virtual void OnOK();
+	afx_msg void OnButAdd();
+	afx_msg void OnButEdit();
+	afx_msg void OnButDel();
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 };
