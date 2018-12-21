@@ -96,7 +96,7 @@ void  Dlg_Sign_Replace::set_DropDownSize(CComboBox& box, UINT LinesToDisplay)
 }
 
 
-void 	Dlg_Sign_Replace::init_combo_data()
+void Dlg_Sign_Replace::init_combo_data()
 {
 	combo_signs_.InsertString(0,"Circle");
 	combo_signs_.InsertString(1,"Hide");

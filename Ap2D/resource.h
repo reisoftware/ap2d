@@ -215,6 +215,7 @@
 #define IDC_BUT_ADD                     1094
 #define IDC_BUT_EDIT                    1095
 #define IDC_BUT_DEL                     1096
+#define IDC_BUT_SAVE                    1097
 #define IDC_LIST_SEC                    1113
 #define IDC_LIST_TYPE                   1113
 #define IDC_LIST_KEY                    1114
@@ -535,7 +536,7 @@
 #define _APS_3D_CONTROLS                     1
 #define _APS_NEXT_RESOURCE_VALUE        144
 #define _APS_NEXT_COMMAND_VALUE         32932
-#define _APS_NEXT_CONTROL_VALUE         1095
+#define _APS_NEXT_CONTROL_VALUE         1098
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif
