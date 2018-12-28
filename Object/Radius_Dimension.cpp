@@ -286,6 +286,7 @@ bool Radius_Dimension::envelopme(const Rect& rect) const
 		&& text.envelop(rect);
 }
 
+
 Rect Radius_Dimension::calc_box2d() const
 {
 	Rect box2d_;
@@ -535,13 +536,6 @@ void Radius_Dimension::getctrl(std::vector<Point>& pts) const
   pts.push_back(tail_);
 
 
-//  RArc arc;
-//  arc.set
-//
-//  pts.push_back(vertex_);
-//  pts.push_back(start_ );
-//  pts.push_back(end_   );
-//  pts.push_back(dim_   );
 }
 int  Radius_Dimension::pt_count()const
 {
