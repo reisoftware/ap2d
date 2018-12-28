@@ -216,6 +216,10 @@ SOURCE=.\DB_File_Date.cpp
 # End Source File
 # Begin Source File
 
+SOURCE=.\DB_Font_Width_Factor.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\DB_Jishou.cpp
 # End Source File
 # Begin Source File
@@ -642,6 +646,10 @@ SOURCE=.\DB_File.h
 # Begin Source File
 
 SOURCE=.\DB_File_Date.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\DB_Font_Width_Factor.h
 # End Source File
 # Begin Source File
 

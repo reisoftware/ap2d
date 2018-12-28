@@ -14,6 +14,7 @@
 #include "../Object/Cut_Section.h"
 #include "../Object/Arc_Arrow.h"
 
+#include "DB_Font_Width_Factor.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -408,15 +409,40 @@ static void save_text(CDrawing& dwg, Text * txt)
 		txt->align_point(dlhml::Text::left_bottom);
 		int iAttach = get_text_Attachment_style(txt->align_point());
 		
-	//	double height_deal = txt->dxf_height() * Global::instance()->setting().reduce_scale_export_;
 		double height_deal = txt->dxf_height();
+
+		//此处是文字的宽度因子
+		double font_wf_scale = Global::instance()->setting().reduce_scale_export_;
+		double font_wf = txt->width_factor();
+
+/*
+		//处理比例因子的问题
+		CString str_wf;
+		str_wf.Format("%f",txt->width_factor());
+		CString wf = DB_Font_Width_Factor::instance()->find(str_wf);
+		double wf_float = atof(wf);
+		if(wf == "-1")
+		{
+			wf_float = txt->width_factor();
+		}
+		else
+		{
+			 wf_float = atof(wf);
+		}
 
 		dwg.Text(txt->text().c_str(), 
 		txt->position().x,txt->position().y,
 		txt->position().x,txt->position().y,
-		height_deal,iAttach,txt->rotation_radian()*180/3.1415926f,txt->width_factor());
-
-	}else{
+		height_deal,iAttach,txt->rotation_radian()*180/3.1415926f,wf_float);
+*/
+		dwg.Text(txt->text().c_str(), 
+		txt->position().x,txt->position().y,
+		txt->position().x,txt->position().y,
+		height_deal,iAttach,txt->rotation_radian()*180/3.1415926f,font_wf) ;
+	}
+	else
+	{
+		//此处是在ap2d中添加的文字，
 
 		//txt->align_point(dlhml::Text::center_top);
 		//系统中的添加文字的，有一定的偏离，所以也计算中cad中的偏离

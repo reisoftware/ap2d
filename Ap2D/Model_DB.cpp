@@ -207,6 +207,8 @@ void Model_DB::create_db(CString file)
 	afc::dir::create_floder(new_file_all_path_);
 	new_file_all_path_ = new_file_all_path_ + "partlist.txt";
 	save(new_file_all_path_);
+
+
 	
 
 }

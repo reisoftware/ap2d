@@ -32,6 +32,7 @@
 #include "DB_Blocks.h"
 
 #include "Dlg_Project_Paths_Save.h"
+#include "DB_Font_Width_Factor.h"
 
 #define  EDIT_WIDTH  80  
 
@@ -346,6 +347,9 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	CString str = exe_path().c_str();
 	Model_DB::instance()->open(str+"configure\\partlist.txt");
+
+	DB_Font_Width_Factor::instance()->open();
+
 	return 0;
 }
 
@@ -969,10 +973,13 @@ void CMainFrame::OnMenuCreateDxf()
 
 void CMainFrame::OnMenuSave()
 {
+	DB_Font_Width_Factor::instance()->save();
 	Global::instance()->is_eidt_ = false;
 	CString cur_states = left_mgr_->save_as_cur_view(left_mgr_->get_pos());
 	if ( cur_states.Compare("") != 0)
 		DB_View::instance()->cur_view()->scene()->database()->save_lua(cur_states.GetBuffer(0));
+
+
 }
 
 void CMainFrame::OnMenuSetErrorCheckP()
@@ -988,6 +995,8 @@ void CMainFrame::OnMenuClearStatus()
 void CMainFrame::OnClose() 
 {
 	// TODO: Add your message handler code here and/or call default
+	DB_Font_Width_Factor::instance()->save();
+
 	if(Global::instance()->is_eidt_)
 	{
 		int res = MessageBox("Please Save the file.","Close the file",MB_YESNO);

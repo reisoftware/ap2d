@@ -38,6 +38,8 @@ public:
 
 // Implementation
 protected:
+	void set_list_prop(CListCtrl &list_ctrl); 
+	void init_list_font_db();
 
 	// Generated message map functions
 	//{{AFX_MSG(Dlg_Setting)
@@ -47,6 +49,8 @@ protected:
 	afx_msg void OnButAdd();
 	afx_msg void OnButEdit();
 	afx_msg void OnButDel();
+	afx_msg void OnClickListWidthFactor(NMHDR* pNMHDR, LRESULT* pResult);
+	afx_msg void OnButSave();
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 };
