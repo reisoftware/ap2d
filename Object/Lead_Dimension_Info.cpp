@@ -223,20 +223,49 @@ double Lead_Dimension_Info::get_txt_max_width(std::vector<Entity*>& es)const
 void Lead_Dimension_Info::get_line(std::vector<Entity*>& es)const
 {  
 	Line * ln = Line::create_me();
-	ln->setdata(start_,text_position_);
-	ln->color_index(dim_style_val_.line_color());
-	es.push_back(ln);
-
-	//添加两个牵引线，符合tekla显示方式，
+		//添加两个牵引线，符合tekla显示方式，
 	Line * ln_level = Line::create_me();
 
-	//float width = get_txt_max_width(es);
-	float width = text_max_len_;
-
 	if(start_.x > text_position_.x)
-		ln_level->setdata(text_position_,Point(text_position_.x-width,text_position_.y));
+	{
+		//float width = get_txt_max_width(es);
+		float width = text_max_len_;
+		//此处是绘制横线的位置，处理时最关键的地方
+		double txt_pos_offset = width*0.45;
+		if(text_max_len_ > 850)
+		{
+			txt_pos_offset = 0;
+		}
+		else
+		{
+			txt_pos_offset = width*0.45;
+		}
+		Point txt_pos = Point(text_position_.x+txt_pos_offset,text_position_.y);
+		ln->setdata(start_,txt_pos);
+		ln->color_index(dim_style_val_.line_color());
+		es.push_back(ln);
+
+
+
+		double left_dis = width-txt_pos_offset/2;
+	//	ln_level->setdata(text_position_,Point(text_position_.x-left_dis,text_position_.y));
+		ln_level->setdata(txt_pos,Point(text_position_.x-left_dis,text_position_.y));
+	}
 	else
+	{
+		ln->setdata(start_,text_position_);
+		ln->color_index(dim_style_val_.line_color());
+		es.push_back(ln);
+
+		//添加两个牵引线，符合tekla显示方式，
+
+		//float width = get_txt_max_width(es);
+		float width = text_max_len_;
+		//此处是绘制横线的位置，处理时最关键的地方
 		ln_level->setdata(text_position_,Point(text_position_.x+width,text_position_.y));
+	
+	}
+	
 	ln_level->color_index(dim_style_val_.line_color());
 	es.push_back(ln_level);
 }
@@ -345,10 +374,22 @@ void Lead_Dimension_Info::drag_endme(const Matrix& mat)
 
 void Lead_Dimension_Info::rep_text(Text *t,std::vector<Entity*>& es)const 
 {
+	double max_len = 0;
 	for(int i=0;i<rep_db_.size();i++){
 	
 		Replace_String rep;
-		rep.rep_text(rep_db_[i].rep_str_,t,rep_db_[i].style_,rep_db_[i].sign_,rep_db_[i].postfix_,es);
+		max_len = rep.rep_text(rep_db_[i].rep_str_,t,rep_db_[i].style_,rep_db_[i].sign_,rep_db_[i].postfix_,es);
+	
+		//怎么记录此时是不是最长的呢。
+		//此时很麻烦，如果当时此行是最长的，替换完成后变短了，总体长度就要变短，但是它是不是最长的，就不应该影响具体长度变化。	
+		//row_lens_.push_back(const_cast<double>(max_len));
+	//	row_lens_.push_back(max_len);
+	
+		if(text_max_len_ <= max_len)
+		{
+			text_max_len_ = max_len;
+		}
+		
 
 	}
 
@@ -409,6 +450,8 @@ void Lead_Dimension_Info::draw_names(std::vector<Entity*>& es)const
 
 
 	int j=0;
+	//每行之间的间隔
+	double row_dis = dim_style_val_.text_height()/2.0;
 	for(i=0;i<ns.size();i++)
 	{
 		Text * text = Text::create_me();
@@ -424,12 +467,14 @@ void Lead_Dimension_Info::draw_names(std::vector<Entity*>& es)const
 		es.push_back(text);
 
 		j++;
-		pos.y = text_position_.y + j*dim_style_val_.text_height()+15.0*j  + up_dis;
+		pos.y = text_position_.y + j*dim_style_val_.text_height()+row_dis*j  + up_dis;
 
 
 		//创建完成后马上进行替换
 		rep_text(text,es);
 		
+//		row_lens_.push_back(text->box2d().width());
+
 		if(text_max_len_ <= text->box2d().width())
 		{
 			text_max_len_ = text->box2d().width();

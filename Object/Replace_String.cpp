@@ -28,15 +28,22 @@ namespace dlhml
 
 Replace_String::Replace_String()
 {
-
+	row_len_ = 0.0;
 }
 
 Replace_String::~Replace_String()
 {
 
 }
+void Replace_String::set_max_txt_len(double len)
+{
+	if(row_len_ <= len)
+	{
+		row_len_ = len;
+	}
+}
 //**new*******************************************************************************
-void Replace_String::draw_circle(Text *t,std::vector<Entity*>& es)
+double Replace_String::draw_circle(Text *t,std::vector<Entity*>& es)
 {
 	Rect rect = t->box2d();
 	Point center((rect.xmax()+rect.xmin())/2.0f,(rect.ymax()+rect.ymin())/2.0f);
@@ -51,10 +58,11 @@ void Replace_String::draw_circle(Text *t,std::vector<Entity*>& es)
 
 	es.push_back(cir);
 
+	return r;
 
 
 }
-void Replace_String::draw_rect(Text *t,std::vector<Entity*>& es)
+double Replace_String::draw_rect(Text *t,std::vector<Entity*>& es)
 {
 	Rect rect = t->box2d();	
 	Rectentity *rc = Rectentity::create_me();
@@ -62,29 +70,36 @@ void Replace_String::draw_rect(Text *t,std::vector<Entity*>& es)
 	rc->rect(rect);
 	es.push_back(rc);
 
+	return rect.width();
+
 }
-void Replace_String::draw_frame_style(Text *t,std::string style,std::vector<Entity*>& es)
+double Replace_String::draw_frame_style(Text *t,std::string style,std::vector<Entity*>& es)
 {
+	double len = 0;
 	if(strcmp(style.c_str(),"Circle") == 0){
-		draw_circle(t,es);
+		len = draw_circle(t,es);
 	}else if(strcmp(style.c_str(), "Rect") == 0){
-		draw_rect(t,es);
+		len = draw_rect(t,es);
 	}else if(strcmp(style.c_str(),"Hide")==0){
 
 	}else{
 		
-	}
-
-	
+	}	
+	return len;
 }
 void Replace_String::replace_text(Text *t,std::string style,std::string sign,std::vector<Entity*>& es)
 {
+	//此处为了把圆和后续文本拉开距离，特意加入空串
+	if(sign == "")
+		sign = " ";
 	t->text(sign);
 	//此处不能缩小文字，可以考虑增大外框，2018-11-9
 	t->dxf_height(t->dxf_height());//缩小一下文字
 	t->re_calc_box2d();
 	//绘制外形
-	draw_frame_style(t,style,es);
+	double sign_len = draw_frame_style(t,style,es);
+
+	set_max_txt_len( t->box2d().width()+sign_len);
 }
 void Replace_String::add_postfix(Text *t,std::string right,std::string postfix,std::vector<Entity*>& es)
 {
@@ -112,6 +127,11 @@ void Replace_String::add_postfix(Text *t,std::string right,std::string postfix,s
 		str = " "+str;
 	
 	post_t->text(str);
+
+	set_max_txt_len( post_t->box2d().width() );
+
+	
+
 	es.push_back(post_t);
 
 }
@@ -156,11 +176,13 @@ void Replace_String::deal_tail(std::string left,std::string right,std::string re
 	if(strcmp(rep_str.c_str(),"") == 0)
 	{
 		merge_str = right;
-	}else{
+	}else
+	{
 		merge_str = rep_str + " " +right;
 	}
 	rep_t->text(merge_str);
 	es.push_back(rep_t);
+	set_max_txt_len( rep_t->box2d().width());
 	//调用deal_head当做此种格式的字符串处理即可。
 
 	deal_head(right,rep_str,rep_t,style,sign,postfix,es);
@@ -183,10 +205,6 @@ void Replace_String::deal_include(std::string rep_str,Text *t,std::string style,
 		right = val.substr(pos+rep_str.length());
 		left =val.assign(val.c_str(),pos);
 	}
-
-
-
-
 	
 	if(left !=""){
 		//H100*100*8*19 SS400 IFC
@@ -200,7 +218,7 @@ void Replace_String::deal_include(std::string rep_str,Text *t,std::string style,
 
 }
 
-void Replace_String::rep_text(std::string rep_str,Text *t ,std::string style,std::string sign,std::string postfix,std::vector<Entity*>& es)
+double Replace_String::rep_text(std::string rep_str,Text *t ,std::string style,std::string sign,std::string postfix,std::vector<Entity*>& es)
 {
 	if(strcmp(t->text().c_str(),rep_str.c_str()) == 0){
 		//处理相等的字符串
@@ -209,6 +227,8 @@ void Replace_String::rep_text(std::string rep_str,Text *t ,std::string style,std
 		//处理包含的字符串
 		deal_include(rep_str,t,style,sign,postfix,es);
 	}
+
+	return row_len_ + 50;
 }
 
 

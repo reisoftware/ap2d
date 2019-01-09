@@ -320,6 +320,23 @@ if(strcmp(arc->line_style().c_str(),"dot") == 0)
 //2 ==== rightbottom
 //3 ==== 
 //4 ==== center
+
+static int get_text_Attachment_style_frame(dlhml::Text::AlignPt style)
+{
+ 	int iAttach = 0;
+ 	if(style  == dlhml::Text::center_center)
+ 		iAttach = 4;
+ 	else if(style  == dlhml::Text::left_bottom)
+ 		iAttach = 0;
+ 	else if(style  == dlhml::Text::left_center)
+ 		iAttach = 1;
+ 	else if(style  == dlhml::Text::right_bottom)
+ 		iAttach = 2;
+ 	else
+ 		iAttach = 4;
+ 
+ 	return iAttach;
+}
 static int get_text_Attachment_style(dlhml::Text::AlignPt style)
 {
 //  return TJ_LEFT;
@@ -407,7 +424,7 @@ static void save_text(CDrawing& dwg, Text * txt)
 	{
 		//处理导入的图幅文字
 		txt->align_point(dlhml::Text::left_bottom);
-		int iAttach = get_text_Attachment_style(txt->align_point());
+		int iAttach = get_text_Attachment_style_frame(txt->align_point());
 		
 		double height_deal = txt->dxf_height();
 

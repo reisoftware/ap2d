@@ -85,6 +85,7 @@ private:
 private:
 	//不需要保存的信息
 	std::vector<Text_Rep_Obj> rep_db_;;
+	const std::vector<double> row_lens_;
 private:
 	void save_luame(std::ofstream &out,int tab_num);
   void open_luame(lua_State *l)  ;

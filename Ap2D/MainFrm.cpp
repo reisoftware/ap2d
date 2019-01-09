@@ -34,6 +34,9 @@
 #include "Dlg_Project_Paths_Save.h"
 #include "DB_Font_Width_Factor.h"
 
+#include "iolua.h"
+#include "Lua_Tab.h"
+
 #define  EDIT_WIDTH  80  
 
 #ifdef _DEBUG
@@ -776,7 +779,12 @@ void CMainFrame::OnButInLua()
 	CFileDialog dlg( TRUE, NULL, NULL, OFN_HIDEREADONLY | OFN_EXPLORER|OFN_NOCHANGEDIR, szFilter, NULL );
 	dlg.m_ofn.lpstrTitle = "Open File";
 	if(dlg.DoModal()== IDOK){
-		DB_View::instance()->cur_view()->scene()->database()->open_lua(dlg.GetPathName().GetBuffer(0),DB_View::instance()->cur_view()->scene()->database());
+		int res = DB_View::instance()->cur_view()->scene()->database()->open_lua(dlg.GetPathName().GetBuffer(0),DB_View::instance()->cur_view()->scene()->database());
+		if(res != 0)
+		{
+			MessageBox("The lua file open error,please check it!");
+		}
+	
 	}
 	DB_View::instance()->cur_view()->scene()->middle_button_dblclk(MK_MBUTTON,dlhml::Point(0,0));
 

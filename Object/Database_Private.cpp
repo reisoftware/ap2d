@@ -1159,20 +1159,24 @@ static int open_db(lua_State *l)
 
 	return 0;
 }
-void Database_Private::open_lua(char *file_name,Database *db)
+int Database_Private::open_lua(char *file_name,Database *db)
 {
 	g_db = db;
 	lua_State *L = lua_open();      /* opens Lua */ 
 	luaopen_base(L);                /* opens the basic library */ 
 	luaopen_table(L);               /* opens the table library */ 
-	luaopen_io(L);                  /* opens the I/O library */ 
+	luaopen_io(L);                   /* opens the I/O library */ 
 	luaopen_string(L);              /* opens the string lib. */ 
 	luaopen_math(L);                /* opens the math lib. */ 
 	lua_pushcfunction(L,&open_db);
 	lua_setglobal(L,"database");
-	luaL_loadfile(L, file_name);
+	//此处对于大lua文件可能存在时读不进去的问题
+	int res = luaL_loadfile(L, file_name);
+	
 	lua_pcall(L,0,0,0);
 	lua_close(L);
+
+	return res;
 }
 
 void Database_Private::get_ents_by_luafile(std::vector<Entity*> &ents)

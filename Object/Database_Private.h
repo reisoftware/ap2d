@@ -24,7 +24,7 @@ public:
 // 	void lua_load(iLua_File &fin);
 
 	void save_lua(char *file_name) const;
-	void open_lua(char *file_name,Database *db);
+	int open_lua(char *file_name,Database *db);
 
 	void get_ents_by_luafile(std::vector<Entity*> &ents);
 

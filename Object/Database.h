@@ -60,7 +60,7 @@ public:
 // 	virtual void lua_load(iLua_File &fin)=0;
 
 	virtual void save_lua(char *file_name) const=0;
-	virtual void open_lua(char *file_name,Database *db)=0;
+	virtual int open_lua(char *file_name,Database *db)=0;
 
 	
 	virtual void save_lua(std::vector<Entity*> &ents,std::string file_name) const=0;

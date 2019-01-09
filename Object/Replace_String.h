@@ -26,7 +26,7 @@ public:
 	virtual ~Replace_String();
 
 
-	void rep_text(std::string rep_str,Text *t ,std::string style,std::string sign,std::string postfix,std::vector<Entity*>& es);
+	double rep_text(std::string rep_str,Text *t ,std::string style,std::string sign,std::string postfix,std::vector<Entity*>& es);
 
 	//½Ó¿Ú
 	void replace_text(Text *t,std::string style,std::string sign,std::vector<Entity*>& es);
@@ -42,10 +42,13 @@ private:
 
 private:
 	void add_postfix(Text *t,std::string right,std::string postfix,std::vector<Entity*>& es);
-	void draw_frame_style(Text *t,std::string style,std::vector<Entity*>& es);
-	void draw_circle(Text *t,std::vector<Entity*>& es);
-	void draw_rect(Text *t,std::vector<Entity*>& es);
+	double draw_frame_style(Text *t,std::string style,std::vector<Entity*>& es);
+	double draw_circle(Text *t,std::vector<Entity*>& es);
+	double draw_rect(Text *t,std::vector<Entity*>& es);
 
+private:
+	double row_len_;
+	void set_max_txt_len(double len);
 
 };
 
