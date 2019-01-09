@@ -320,6 +320,7 @@ protected:
 	afx_msg void OnButDimSolpe();
 	afx_msg void OnButCancelCombination();
 	afx_msg void OnMenuSetup();
+	afx_msg void OnButDimLineLead();
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 };

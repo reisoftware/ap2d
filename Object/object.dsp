@@ -226,6 +226,10 @@ SOURCE=.\Lead_Dimension_MT.cpp
 # End Source File
 # Begin Source File
 
+SOURCE=.\Lead_Line_Dim.cpp
+# End Source File
+# Begin Source File
+
 SOURCE=.\Line.cpp
 # End Source File
 # Begin Source File
@@ -500,6 +504,10 @@ SOURCE=.\Lead_Dimension_Info.h
 # Begin Source File
 
 SOURCE=.\Lead_Dimension_MT.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Lead_Line_Dim.h
 # End Source File
 # Begin Source File
 

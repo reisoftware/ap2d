@@ -312,9 +312,10 @@ BEGIN_MESSAGE_MAP(CAp2DView, CView)
 	ON_COMMAND(ID_BUT_FIND_MID, OnButFindMid)
 	ON_COMMAND(ID_BUT_DIM_SOLPE, OnButDimSolpe)
 	ON_COMMAND(ID_BUT_CANCEL_COMBINATION, OnButCancelCombination)
+	ON_COMMAND(ID_MENU_SETUP, OnMenuSetup)
 	ON_WM_KEYUP()
 	ON_WM_RBUTTONUP()
-	ON_COMMAND(ID_MENU_SETUP, OnMenuSetup)
+	ON_COMMAND(ID_BUT_DIM_LINE_LEAD, OnButDimLineLead)
 	//}}AFX_MSG_MAP
 	// Standard printing commands
 	ON_COMMAND(ID_FILE_PRINT, CView::OnFilePrint)
@@ -2934,5 +2935,24 @@ void CAp2DView::OnMenuSetup()
 
 	Dlg_Setting setting;
 	setting.DoModal();
+
+}
+
+void CAp2DView::OnButDimLineLead() 
+{
+	// TODO: Add your command handler code here
+	set_edit();
+	dlhml::Lead_Dimension seed;
+
+	seed.color_index(3);
+	seed.layer_name(LAYER_AP_DIM);
+
+	// init_dim_lead(seed);
+	seed.dim_text(get_select_txt(view_->scene()->database()));
+
+	create_command(seed);
+	CMainFrame* pM = (CMainFrame*)AfxGetMainWnd();
+	Global::instance()->mgr_toolbar().check_create_toolbar(ID_BUT_DIM_LEAD, pM->get_create_bar());
+	repeat_cmd_ = &CAp2DView::OnButDimLead;
 
 }

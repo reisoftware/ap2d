@@ -36,6 +36,7 @@ class Ln_Dim_Direct;
 
 class Dim_Angle;
 class Dim_Angle_Lean;
+class Lead_Line_Dim;
 
 class Group;
 class Visitor  
@@ -56,6 +57,7 @@ public:
 	virtual bool Visit_Angle_Dimension(Angle_Dimension& dim) {return false;}
 	virtual bool Visit_Ln_Dim(Ln_Dim& dim) {return false;}
 	virtual bool Visit_Lead_Dimension(Lead_Dimension& dim) {return false;}
+	virtual bool Visit_Lead_Line_Dim(Lead_Line_Dim& dim) {return false;}
 	virtual bool Visit_Lead_Dimension_MT(Lead_Dimension_MT& dim) {return false;}
 	virtual bool Visit_Radius_Dimension(Radius_Dimension& dim) {return false;}
 	virtual bool Visit_Text_Dimension(Text_Dimension& dim) {return false;}

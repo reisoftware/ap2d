@@ -29,6 +29,7 @@ class Text_Dimension_Info;
 class Ln_Dim_PlateSide;
 class Ln_Dim_Direct;
 class Lead_Name;
+class Lead_Line_Dim;
 //
 //class Line_Dim;
 
@@ -46,6 +47,7 @@ public:
 	virtual bool intersect(Point& pt,const Rect& rect,const Cloud_Line& cloud) const = 0;
 	virtual bool intersect(Point& pt,const Rect& rect,const Text_Dimension& dim) const = 0;
 	virtual bool intersect(Point& Pt,const Rect& rect,const Lead_Dimension& dim) const = 0;
+	virtual bool intersect(Point& Pt,const Rect& rect,const Lead_Line_Dim& dim) const = 0;
 	virtual bool intersect(Point& Pt,const Rect& rect,const Lead_Dimension_MT& dim) const = 0;
 	virtual bool intersect(Point& pt,const Rect& rect,const Three_Pt_Dimension& dim) const = 0;
 	virtual bool intersect(Point& pt,const Rect& rect,const Ln_Dim& dim) const = 0;
