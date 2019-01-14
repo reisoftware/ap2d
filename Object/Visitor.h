@@ -70,8 +70,9 @@ public:
 	virtual bool Visit_Group(Group& group) {return false;}
 	virtual bool visit_block(Block& block) {return false;}
 
-	virtual bool visit_Lead_Dimension_Info(Lead_Dimension_Info& dim) {return false;}
 	virtual bool visit_Lead_Name(Lead_Name& dim) {return false;}
+
+	virtual bool visit_Lead_Dimension_Info(Lead_Dimension_Info& dim) {return false;}
 
 	virtual bool Visit_Text_Dimension_Info(Text_Dimension_Info& dim) {return false;}
 	virtual bool Visit_Ln_Dim_PlateSide(Ln_Dim_PlateSide& dim) {return false;}

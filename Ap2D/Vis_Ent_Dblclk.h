@@ -39,6 +39,9 @@ public:
 	bool Visit_Lead_Dimension_Block(dlhml::Lead_Dimension_Block& lead_dim_block);
 
 	bool visit_Lead_Dimension_Info(dlhml::Lead_Dimension_Info& lead_dim_info);
+	bool Visit_Lead_Line_Dim(dlhml::Lead_Line_Dim& lead_dim_info);
+
+
 
 	bool Visit_Text_Dimension_Info(dlhml::Text_Dimension_Info& dim) ;
 	bool Visit_Ln_Dim_PlateSide(dlhml::Ln_Dim_PlateSide& dim) ;

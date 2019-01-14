@@ -109,6 +109,7 @@ void Mgr_Toolbar::init_create_bar_ids()
 	ids.push_back(std::make_pair<UINT,CString>(ID_BUT_LAYOUT_DIM_BASE, "Dim Steel"));
 	ids.push_back(std::make_pair<UINT,CString>(ID_BUT_DIM_RE0, "Dim Steel"));
 	ids.push_back(std::make_pair<UINT,CString>(ID_BUT_DIM_TXT_P, "Dim Text"));
+	ids.push_back(std::make_pair<UINT,CString>(ID_BUT_DIM_LEAD, "Dim Lead Line"));
 }
 
 void Mgr_Toolbar::init_edit_bar_ids()

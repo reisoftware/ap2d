@@ -9,6 +9,7 @@
 
 namespace lua{
 
+
 static bool number_save(std::ofstream &out, const char *name, double val, int tab_num)
 {
 	while (0 < tab_num--)
@@ -54,6 +55,57 @@ void begin_table(std::ofstream &out,const char *name,int tab_num)
 		out << "{" <<"\n";
 
 }
+
+		/*
+static bool number_save(std::ofstream &out, const char *name, double val, int tab_num)
+{
+	while (0 < tab_num--)
+		out << "\t";
+	if (NULL != name)
+		out << name << " = ";
+	if (val)
+    out << std::setprecision(15) << val << ",";
+	else
+		out << "0" << ",";
+	return true;
+}
+
+static bool str_save(std::ofstream &out,const char *name,const char *val,int tab_num)
+{
+	while (0 < tab_num--)
+		out << "\t";
+	if (name)
+		out << name << " = ";
+	if (val)
+		out << "[[" << val << "]],\n";
+	else
+		out << "[[" << "null" << "]],\n";
+	return true;
+}
+
+void val_save(std::ofstream &out,const char *val,int tab_num)
+{
+	while (0 < tab_num--)
+		out << "\t";
+	if (val)
+		out << val << " ";
+	else
+		out << "null" << " ";
+}
+void begin_table(std::ofstream &out,const char *name,int tab_num)
+{
+	while (0 < tab_num--)
+		out << "\t";
+	if(name)
+		out << name << " = { "<<" ";
+	else
+		out << "{" <<" ";
+
+}
+*/
+
+
+
 void end_table(std::ofstream &out,int tab_num)
 {
 	val_save(out,"},",tab_num);

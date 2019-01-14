@@ -35,13 +35,10 @@ MY_IMPLEMENT_DYNCREATE(Lead_Line_Dim,Dimension)
 Lead_Line_Dim::Lead_Line_Dim()
 MCT_INIT1("Lead_Line_Dim")
 {
-  //dim_style_val_.arrow_num(ARROW_END);
-  align_point(Text::center_center);
-	//dim_content_ = NULL;
+	align_point(Text::center_center);
 	dim_sign_ = NULL;
 	dim_text("TXT");
-	dim_style_val_.txt_frame(Dimension_Style::ArcEdge);
-	lead_ = true;
+	dim_style_val_.txt_frame(Dimension_Style::Baseline);
 }
 
 Lead_Line_Dim::Lead_Line_Dim(const Lead_Line_Dim& rhs)
@@ -55,7 +52,6 @@ MCT_INIT2("Lead_Line_Dim")
 	start_pt_rect_ = rhs.start_pt_rect_;
 	//string_copy(dim_content_,rhs.dim_content_);
 	string_copy(dim_sign_,rhs.dim_sign_);
-	lead_ = rhs.lead_;
 }
 Lead_Line_Dim& Lead_Line_Dim::operator=(const Lead_Line_Dim& rhs)
 {
@@ -69,7 +65,6 @@ Lead_Line_Dim& Lead_Line_Dim::operator=(const Lead_Line_Dim& rhs)
 	start_pt_rect_ = rhs.start_pt_rect_;
 	//string_copy(dim_content_,rhs.dim_content_);
 	string_copy(dim_sign_,rhs.dim_sign_);
-	lead_ = rhs.lead_;
 	return *this;
 }
 Lead_Line_Dim::~Lead_Line_Dim()
@@ -123,7 +118,6 @@ void Lead_Line_Dim::loadme(File& in)
 	start_pt_rect_.load(in);
 	color_fact_.load(in);
 	in >> dim_sign_;
-	in >> lead_;
 }
 void Lead_Line_Dim::saveme(const File& out) const
 {
@@ -133,7 +127,6 @@ void Lead_Line_Dim::saveme(const File& out) const
 	start_pt_rect_.save(out);
 	color_fact_.save(out);
 	out << dim_sign_;
-	out << lead_;
 }
 void Lead_Line_Dim::save_luame(std::ofstream &out,int tab_num)
 {
@@ -161,7 +154,6 @@ void Lead_Line_Dim::open_luame(lua_State *l)
 	get_value(string,l,temp,"dim_sign_");
 	string_copy(dim_sign_,temp.c_str());
 	
-	get_value(number,l,lead_,"lead_");
 	txt_change(true);
 	TRACE_OUT("Lead_Line_Dim::open_luame() end\n");
 
@@ -176,7 +168,6 @@ void Lead_Line_Dim::get_strme(char *out)
 	start_.get_str_sub("start_");
 	start_pt_rect_.get_str_sub("start_pt_rect_");
 	rei_add_str(NULL,"dim_sign_",dim_sign_);
-	rei_add_int(NULL,"lead_",lead_);
 	rei_get_encode(out);
 }
 
@@ -189,7 +180,6 @@ void Lead_Line_Dim::set_from_strme(char *in)
 	start_.set_from_str_sub("start_");
 	start_pt_rect_.set_from_str_sub("start_pt_rect_");
 	dim_sign_ = rei_get("dim_sign_");
-	lead_ = atoi(rei_get("lead_"));
 	rei_quit();
 }
 
@@ -206,7 +196,6 @@ void Lead_Line_Dim::get_str_sub(char *name)
 	sprintf(s,"%s.dim_sign_",name);
 	rei_add_str(NULL,s,dim_sign_);
 	sprintf(s,"%s.dim_sign_",name);
-	rei_add_int(NULL,s,lead_);
 
 }
 void Lead_Line_Dim::set_from_str_sub(char *name)
@@ -221,8 +210,6 @@ void Lead_Line_Dim::set_from_str_sub(char *name)
 	start_pt_rect_.set_from_str_sub(s);
 	sprintf(s,"%s.dim_sign_",name);
 	dim_sign_ = rei_get(s);
-	sprintf(s,"%s.lead_",name);
-	lead_ = atoi(rei_get(s));
 
 }
 
@@ -247,18 +234,8 @@ LPCTSTR Lead_Line_Dim::dim_sign() const
 void Lead_Line_Dim::edit_propertyme(const Edit_Entity& edit)
 {
   show_change(true);
-//	edit.edit_lead_dim(*this);
 }
 
-//void Lead_Line_Dim::drawme(Draw_Entity& out) const
-//{
-//	out.draw_lead_dim(*this);
-//}
-//
-//void Lead_Line_Dim::xor_drawme(Draw_Entity& out) const
-//{
-//	out.xor_draw_lead_dim(*this);
-//}
 
 errorinfo Lead_Line_Dim::postme2db(Database& db,Entity_ID& id)
 {
@@ -268,29 +245,22 @@ errorinfo Lead_Line_Dim::postme2db(Database& db,Entity_ID& id)
 
 void Lead_Line_Dim::transformbyme(const Matrix& mat)
 {
-//	REITRACE;
-  show_change(true);
-//	REITRACE;
-  Dimension::transformbyme(mat);
-//	REITRACE;
-	//text_position_.transformby(mat);
+	show_change(true);
+	Dimension::transformbyme(mat);
 	start_.transformby(mat);
-//	REITRACE;
 
 	start_pt_rect_.transformby(mat);
-	//	REITRACE;
 }
 void Lead_Line_Dim::drag_startme(const Matrix& mat)
 {
-  show_change(true);
+	show_change(true);
 	start_.transformby(mat);
 	start_pt_rect_.transformby(mat);
 }
 void Lead_Line_Dim::drag_endme(const Matrix& mat)
 {
-  show_change(true);
+	show_change(true);
 	text_position_.transformby(mat);
-	//end_.transformby(mat);
 }
 
 Entity* Lead_Line_Dim::cloneme() const
@@ -312,63 +282,19 @@ void Lead_Line_Dim::closeme()
 }
 bool Lead_Line_Dim::get_line(Line& line) const
 {
-  //Point ed;
-  Text txt;
-  get_text_show(txt);
-  Dimension_Style::Txt_Frame ts = dim_style_val_.txt_frame();
-  ////圆型外框
-  if(ts == Dimension_Style::CircleEdge){
-    Point c = txt.center();
-    std::vector<Circle*> crs;
-    dim_style_val_.get_text_circle(txt,crs);
-    if(crs.empty()){
-      line.setdata(start_,c);
-      return true;
-    }
-    Circle cr = *(crs.front());
-    //c = cr.center();
-    c = text_position();
-    Normal nor;
-    nor.set_data(c,start_);
-    Point ed = c.polarTo(cr.radius(),nor);
-    line.setdata(start_,ed);
-    destory(crs);
-    return true;
-  }
-  ////其他形状外框
-  else{
-//    Point pts[4];
-//    txt.real_box_point(pts);
-    //const std::vector<Point>& pts = txt.real_box_point();
+	//Point ed;
+	Text txt;
+	get_text_show(txt);
+	Dimension_Style::Txt_Frame ts = dim_style_val_.txt_frame();
+	////圆型外框
+	if(ts == Dimension_Style::Baseline)
+	{  
 		std::vector<Point> pts;
 		txt.real_box_pt(pts);
 		assert(pts.size()>=4);
-    ////若st点在框内，则不画
-//    if(dlhml::is_in(start_, pts)){
-//      line.setdata(start_,start_);
-//      return true;
-//    }
-    ////否则，选择最近的点连接
-    int min_dis_id = geo2d::min_dis(pts, start_);
-
-//    int min_dis_id=0;
-//
-//    Float min_dis=start_.distanceto2d(pts[0]);
-//    Float dis=0;
-//    int i=0;
-//    for(i=1;i<4;i++){
-//      dis = start_.distanceto2d(pts[i]);
-//      if(LessThen(dis,min_dis)){
-//        min_dis = dis;
-//        min_dis_id = i;
-//      }
-//    }
-//
-    line.setdata(start_,pts[min_dis_id]);
-    //line.setdata(start_,txt.position());
-	  return true;
-    //ed = pts[min_dis_id];
-  }
+		line.setdata(start_,txt.position());
+		return true;
+	}
 
 	//line.setdata(start_,ed);
 	return true;
@@ -376,87 +302,70 @@ bool Lead_Line_Dim::get_line(Line& line) const
 
 void Lead_Line_Dim::get_line(std::vector<Entity*>& es)const
 {
-  //LINE
-  Line * ln = Line::create_me();
-  get_line_show(*ln);
-  es.push_back(ln);
+	//斜线
+	Line * ln_lean = Line::create_me();
+	ln_lean->color_index(dim_style_val_.line_color());
+
+	if(start_.x > text_position_.x)
+	{
+		Point pt_end(text_position_.x+text_max_len_,text_position_.y,text_position_.z);
+		ln_lean->setdata(start_,pt_end);
+	}
+	else
+	{
+		ln_lean->setdata(start_,text_position_);
+	}
+	es.push_back(ln_lean);
+
+	//横线
+	Line * ln_level = Line::create_me();
+	ln_level->color_index(dim_style_val_.line_color());
+
+	if(start_.x > text_position_.x)
+	{
+		Point pt_st(text_position_.x+text_max_len_,text_position_.y,text_position_.z);
+		Point pt_end(pt_st.x-text_max_len_,pt_st.y,pt_st.z);
+		ln_level->setdata(pt_st,pt_end);
+	}
+	else
+	{
+		Point pt_end(text_position_.x+text_max_len_,text_position_.y,text_position_.z);
+		ln_level->setdata(text_position_,pt_end);
+	}
+	es.push_back(ln_level);
+
+
 }
 
 void Lead_Line_Dim::get_show(std::vector<Entity*>& es)const
 {
-	////不显示牵引线
-	if(lead_){
-		get_line(es);
-		//LINE
-		//ARROW
-		Line ln;
-		get_line_show(ln);
-		dim_style_val_.get_arrow(ln,es);
-	}
+	//文字
+	Text * text = Text::create_me();
+	text->set_database(static_current_db_);
+	text->rotation(text_rotation_);
+	text->setdata(text_position_,dim_text_);
+	//text->width_factor(0.1);
+	text->color_index(dim_style_val_.text_color());
+	dim_style_val_.get_text(*text);
 
-  //TEXT AND ITS FRAME
-  Text * txt = Text::create_me();
-  get_text_frame_show(*txt, es); 
-  es.push_back(txt);
+	txt_record(*text);	  
+	text->align_point(Text::left_bottom);
+	es.push_back(text);
+
+	text_max_len_ = text->box2d().width();
+	//直线
+	get_line(es);
 }
-//  Line * ln = Line::create_me();
-//  get_line_show(*ln);
-//  es.push_back(ln);
-//   std::vector<Line*> slns;
-//   get_start_arrow_line_show(slns);
-//   push(slns,es);
-//   std::vector<Circle*> scrs;
-//   get_start_arrow_circle_show(scrs);
-//   push(scrs,es);
+
+
 
   
 void Lead_Line_Dim::get_line_show(Line& ln)const
 {
 	get_line(ln);
 	ln.line_style(line_style());
-	//ln.color_index(dim_style_val_.text_frame_color());
 	ln.color_index(dim_style_val_.line_color());
 }
-//bool Lead_Line_Dim::get_line_show(std::vector<Line*>& lines) const
-//{
-//	get_line(*lines[0]);
-//	lines[0]->line_style(line_style());
-//	lines[0]->color(color());
-//	return true;
-//}
-
-int Lead_Line_Dim::get_start_arrow_line_show(std::vector<Line*>& lines) const
-{
-  Line start;
-  get_line(start);
-  const Dimension_Style* ds=&dim_style_val_;
-
-  Normal nor;
-  nor.set_data(text_position(),start_);
-
-  ds->get_arrow_line(start_,nor,lines);
-  for(int i=0;i<lines.size();++i){
-    lines[i]->line_style(line_style());
-    lines[i]->color_index(dim_style_val_.text_frame_color());
-  }
-  //return num;
-  return 0;
-}
-int Lead_Line_Dim::get_start_arrow_circle_show(std::vector<Circle*>& circles) const
-{
-  Line start;
-  get_line(start);
-  const Dimension_Style* ds=&dim_style_val_;
-
-  ds->get_arrow_circle(start_,circles);
-  for(int i=0;i<circles.size();++i){
-    circles[i]->line_style(line_style());
-    circles[i]->color_index(dim_style_val_.text_frame_color());
-  }
-  //return num;
-  return 0;
-}
-
 
 
 bool Lead_Line_Dim::intersectme(const Rect& rect) const
@@ -480,22 +389,6 @@ bool Lead_Line_Dim::envelopme(const Rect& rect) const
 		&& text.envelop(rect);
 }
 
-//Rect Lead_Line_Dim::calc_box2d() const
-//{
-//	Rect box2d_;
-//	Line line;
-//	get_line(line);
-//	Text text;
-//	get_text_show(text);
-//	std::vector<Entity*> ents;
-//	ents.push_back(&line);
-//	ents.push_back(&text);
-//
-//	dlhml::box2d(box2d_, ents);
-////	Entity_Calculate calc;
-////	calc.get_ents_rect(box2d_,ents);
-//	return box2d_;
-//}
 Rect Lead_Line_Dim::get_txt_rect()
 {
 	Rect rect;
@@ -528,14 +421,7 @@ bool Lead_Line_Dim::snap_nearest_pointme(Point& pt,const Rect& rect) const
 	get_line(line);
 	return line.snap_nearest_point(pt,rect);
 }
-//bool Lead_Line_Dim::snap_intersect_pointme(Point& pt,const Entity& ent,const Rect& rect) const
-//{
-////NOOK SNAP 2009.07.02
-//////Entity 统一实现
-//  return false;
-////	Entity_Snap_Implement<Lead_Line_Dim> imp(*this);
-////	return ent.snap_intersect_point_imp(pt,imp,rect);
-//}
+
 bool Lead_Line_Dim::snap_intersect_pointme(Point& pt,const Entity_Snap& snap,const Rect& rect) const
 {
 	return snap.intersect(pt,rect,*this);
@@ -578,13 +464,6 @@ Point Lead_Line_Dim::get_range_pt()
 	}
 	return end_pt;
 }
-
-
-  //pts.push_back(end_ );
-//		if(pts.size() != 2){
-//			return;
-//		}
-//		//end_ = pts[1];
 //09.6.22
 void Lead_Line_Dim::setctrl(const std::vector<Point>& pts)
 {

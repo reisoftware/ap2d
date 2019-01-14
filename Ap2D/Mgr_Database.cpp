@@ -35,6 +35,7 @@
 #include "Ln_Dim_Direct.h"
 #include "Ln_Dim_PlateSide.h"
 #include "Dim_Angle.h"
+#include "Lead_Line_Dim.h"
 
 
 
@@ -205,6 +206,7 @@ bool is_dims(Entitys &ents)
 			ents[i]->isa(MY_RUNTIME_CLASS(Ln_Dim_Direct))||
 			ents[i]->isa(MY_RUNTIME_CLASS(Ln_Dim_PlateSide))||
 			ents[i]->isa(MY_RUNTIME_CLASS(Dim_Angle))||
+			ents[i]->isa(MY_RUNTIME_CLASS(Lead_Line_Dim))||
 			ents[i]->isa(MY_RUNTIME_CLASS(Lead_Dimension_Block))
 			)
 			size++;
@@ -227,6 +229,7 @@ bool is_dims_no_angle(Entitys &ents)
 			ents[i]->isa(MY_RUNTIME_CLASS(Text_Dimension_Info))||
 			ents[i]->isa(MY_RUNTIME_CLASS(Ln_Dim_Direct))||
 			ents[i]->isa(MY_RUNTIME_CLASS(Ln_Dim_PlateSide))||
+		//	ents[i]->isa(MY_RUNTIME_CLASS(Lead_Line_Dim))||
 			ents[i]->isa(MY_RUNTIME_CLASS(Lead_Dimension_Block))
 			)
 			size++;
@@ -241,7 +244,8 @@ bool is_dims_blk(Entitys &ents)
 	int size = 0;
 	for(int i=0;i<ents.size();i++){
 		if(ents[i]->isa(MY_RUNTIME_CLASS(Ln_Dim_Block))||
-			ents[i]->isa(MY_RUNTIME_CLASS(Lead_Dimension_Block))
+			ents[i]->isa(MY_RUNTIME_CLASS(Lead_Dimension_Block)) 
+		//	ents[i]->isa(MY_RUNTIME_CLASS(Lead_Line_Dim))
 			)
 			size++;
 	}

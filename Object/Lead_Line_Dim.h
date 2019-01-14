@@ -29,16 +29,13 @@ public:
 	Rect  start_pt_rect() const					{return start_pt_rect_;}
 
 public:
-	void	setdata(const Point& st,const Point& ed);
+	void setdata(const Point& st,const Point& ed);
 
 	void  start(const Point& st);
 	Point start()const;
-  void  end(const Point& ed);
-  Point end()const;
+	void  end(const Point& ed);
+	Point end()const;
 
-public:
-	void lead(bool b){lead_ = b;}
-	bool lead() const{return lead_;}
 
 
 public:
@@ -49,8 +46,6 @@ public:
   virtual void get_show(std::vector<Entity*>& es)const;
 
   void get_line_show(Line& ln)const;
-	int  get_start_arrow_line_show  (std::vector<Line   *>& lines   ) const;
-	int  get_start_arrow_circle_show(std::vector<Circle *>& circles ) const;
 
 	void get_str_sub(char *name);
 	void set_from_str_sub(char *name);
@@ -120,6 +115,10 @@ private:
 	bool snap_nearest_pointme(Point& pt,const Rect& rect) const;
 	//bool snap_intersect_pointme(Point& pt,const Entity& ent,const Rect& rect) const;
 	bool snap_intersect_pointme(Point& pt,const Entity_Snap& snap,const Rect& rect) const;
+
+	mutable  double  text_max_len_;
+
+
 };
 
 

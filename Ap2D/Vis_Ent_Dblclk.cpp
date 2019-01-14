@@ -36,6 +36,7 @@
 #include "Ln_Dim_Direct.h"
 
 #include "Dim_Angle.h"
+#include "Lead_Line_Dim.h"
 
 #ifdef _DEBUG
 #undef THIS_FILE
@@ -271,6 +272,21 @@ bool Vis_Ent_Dblclk::visit_Lead_Dimension_Info(dlhml::Lead_Dimension_Info& lead_
 	get_page_common(Global::instance()->cur_val().page_common_,lead_dim_info.line_style(),ds.line_color());
 	get_page_arrow(Global::instance()->cur_val().page_arrow_,ds);
 	get_page_dim(Global::instance()->cur_val().page_dim_,lead_dim_info.line_style(),ds);	
+	get_page_text(Global::instance()->cur_val().page_text_,lead_dim_info.text_rotation(),lead_dim_info.dim_text(),Dim_Kind_Lead_dim,ds);
+	show_dlg();
+
+	return true;
+}
+
+bool Vis_Ent_Dblclk::Visit_Lead_Line_Dim(dlhml::Lead_Line_Dim& lead_dim_info)
+{
+	//Dlg_Dim_Name_Set dlg;
+	//dlg.DoModal();
+
+	dlhml::Dimension_Style ds = lead_dim_info.dim_style_val();
+	get_page_common(Global::instance()->cur_val().page_common_,lead_dim_info.line_style(),ds.line_color());
+//	get_page_arrow(Global::instance()->cur_val().page_arrow_,ds);
+//	get_page_dim(Global::instance()->cur_val().page_dim_,lead_dim_info.line_style(),ds);	
 	get_page_text(Global::instance()->cur_val().page_text_,lead_dim_info.text_rotation(),lead_dim_info.dim_text(),Dim_Kind_Lead_dim,ds);
 	show_dlg();
 

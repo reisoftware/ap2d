@@ -64,6 +64,7 @@
 #include "Cmd_Draw_Center.h"
 #include "Cmd_Dim_Solpe.h"
 #include "Dim_Angle.h"
+#include "Lead_Line_Dim.h"
 
 #include <process.h>
 
@@ -2942,7 +2943,7 @@ void CAp2DView::OnButDimLineLead()
 {
 	// TODO: Add your command handler code here
 	set_edit();
-	dlhml::Lead_Dimension seed;
+	dlhml::Lead_Line_Dim seed;
 
 	seed.color_index(3);
 	seed.layer_name(LAYER_AP_DIM);
@@ -2952,7 +2953,7 @@ void CAp2DView::OnButDimLineLead()
 
 	create_command(seed);
 	CMainFrame* pM = (CMainFrame*)AfxGetMainWnd();
-	Global::instance()->mgr_toolbar().check_create_toolbar(ID_BUT_DIM_LEAD, pM->get_create_bar());
+	Global::instance()->mgr_toolbar().check_create_toolbar(ID_BUT_DIM_LINE_LEAD, pM->get_create_bar());
 	repeat_cmd_ = &CAp2DView::OnButDimLead;
 
 }
