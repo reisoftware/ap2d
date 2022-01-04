@@ -265,6 +265,7 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	if (CMDIFrameWnd::OnCreate(lpCreateStruct) == -1)
 		return -1;
 
+	m_strTitle= "JN2D";
 		create_left();
 
 	init_put_bar();

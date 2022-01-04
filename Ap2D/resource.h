@@ -278,6 +278,7 @@
 #define IDD_DLG_REPLACE_MATERIAL        5130
 #define IDD_PAGE_TEXT_COMMON            5131
 #define IDD_DLG_SERVER                  5132
+#define IDD_ABOUTBOX1                   5133
 #define IDC_COMBO_COLOR                 5136
 #define IDC_COMBO_COLOR_NO2             5137
 #define IDC_COMBO_COLOR_FILE_0          5137

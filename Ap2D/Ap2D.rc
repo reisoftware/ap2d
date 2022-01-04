@@ -261,12 +261,12 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 
 IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
 STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "About Ap2D"
+CAPTION "About JN2D"
 FONT 8, "MS Sans Serif"
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
-    LTEXT           "Ap2D Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
-    LTEXT           "Copyright (C) 2012",IDC_STATIC,40,25,119,8
+    LTEXT           "JN2D Version 1.1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2020",IDC_STATIC,40,25,119,8
     DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
 END
 
@@ -949,6 +949,17 @@ BEGIN
                     WS_TABSTOP,34,23,106,15
 END
 
+IDD_ABOUTBOX1 DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Ap2D"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Ap2D Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -1212,6 +1223,14 @@ BEGIN
         TOPMARGIN, 7
         BOTTOMMARGIN, 67
     END
+
+    IDD_ABOUTBOX1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
 END
 #endif    // APSTUDIO_INVOKED
 
@@ -1430,7 +1449,7 @@ BEGIN
     END
     POPUP "&Help"
     BEGIN
-        MENUITEM "&About Ap2D...",              ID_APP_ABOUT
+        MENUITEM "&About JN2D...",              ID_APP_ABOUT
     END
 END
 
@@ -1541,7 +1560,7 @@ BEGIN
     BEGIN
         MENUITEM "Help",                        ID_APP_HELP_P
         MENUITEM "New Features",                ID_MENU_NEW_FEATURES
-        MENUITEM "&About Ap2D...",              ID_APP_ABOUT
+        MENUITEM "&About JN2D...",              ID_APP_ABOUT
     END
 END
 

@@ -53,7 +53,7 @@ BSC32=bscmake.exe
 # ADD BSC32 /nologo
 LINK32=link.exe
 # ADD BASE LINK32 /nologo /subsystem:windows /machine:I386
-# ADD LINK32 trace.lib cadio_d.lib object.lib afc.lib display.lib geometry.lib net.lib lua5.1.lib /nologo /subsystem:windows /machine:I386 /out:"..\bin/Ap2D.exe" /libpath:"..\lib"
+# ADD LINK32 trace.lib cadio_d.lib object.lib afc.lib display.lib geometry.lib net.lib lua5.1.lib /nologo /subsystem:windows /machine:I386 /out:"..\bin/JN2D.exe" /libpath:"..\lib"
 
 !ELSEIF  "$(CFG)" == "Ap2D - Win32 Debug"
 

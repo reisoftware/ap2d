@@ -1,5 +1,5 @@
 C:\test\cad\
-text_title = D:\test\ap2d²âÊÔ\
+text_title = C:\test\cad\
 C:\test\ÑuÆ·‡í\
 C:\test\
 C:\ÑuÆ·‡í\
